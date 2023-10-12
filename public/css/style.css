@@ -19,3 +19,80 @@ body {
   background-color: #333333;
   height: 80px;
 }
+
+.game-container {
+  display: flex;
+  flex-direction: row;
+  width: 1400px;
+  margin: 20px auto;
+}
+
+.left-bar {
+  text-align: center;
+  width: 20%;
+  margin: 0 10px;
+}
+.score {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f5f3eb;
+}
+
+.score p {
+  font-size: 24px;
+  border-bottom: solid 1px #666666;
+  padding-bottom: 20px;
+}
+
+.score p:last-of-type {
+  margin-bottom: 0;
+  border-bottom: solid 0px #666666;
+  padding-bottom: 0px;
+}
+
+.game {
+  width: 50%;
+  margin: 0 10px;
+  background-color: #f5f3eb;
+}
+.result {
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.result-window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 300px;
+}
+
+.player-window {
+  text-align: center;
+}
+
+.pick {
+  border-top: solid 2px #000000;
+  text-align: center;
+}
+
+.pick-window {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.pick-box {
+  width: 157px;
+  height: 157px;
+  background-color: white;
+  margin: 20px;
+}
+.chat {
+  width: 30%;
+  margin: 0 10px;
+  height: 500px;
+  background-color: #f5f3eb;
+}

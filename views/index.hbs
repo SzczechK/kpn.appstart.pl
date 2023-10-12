@@ -16,6 +16,88 @@
         </div>
       </div>
     </div>
+    <div class='game-container'>
+      <div class='left-bar'>
+        <div class='score' style='color: red;'>
+          Rekord wygranych z rzędu:
+          <p class='best-win'>0</p>
+        </div>
+        <div class='score'>
+          Wygranych:
+          <p class='win'>0</p>
+          Przegranych:
+          <p class='loss'>0</p>
+          Remisów:
+          <p class='draw'>0</p>
+          Wygrana z rzędu:
+          <p class='win-in-a-row'>0</p>
+        </div>
+      </div>
+      <div class='game'>
+        <div class='result'>
+          <p class='result-text'>Wybierz swoją broń aby zacząć.</p>
+        </div>
+        <div class='result-window'>
+          <div class='player-window'>
+            <p>GRACZ:</p>
+            <div class='player'>
+              <div class='pick-box'><img
+                  src='/img/start.webp'
+                  width='157px;'
+                  height='157px'
+                />
+              </div>
+            </div>
+          </div>
+          <div class='player-window'>
+            <p>KOMPUTER:</p>
+            <div class='pc'>
+              <div class='pick-box'><img
+                  src='/img/start.webp'
+                  width='157px;'
+                  height='157px'
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='pick'>
+          <p>WYBIERZ BRÓN!</p>
+          <div class='pick-window'>
+            <div class='pick-box'>
+              <img
+                id='item-rock'
+                src='/img/rock.webp'
+                width='157px'
+                height='157px'
+                data-type='rock'
+              />
+            </div>
+            <div class='pick-box'>
+              <img
+                id='item-papper'
+                src='/img/papper.webp'
+                width='157px'
+                height='157px'
+                data-type='papper'
+              />
+            </div>
+            <div class='pick-box'>
+              <img
+                id='item-scissors'
+                src='/img/scissors.webp'
+                width='157px'
+                height='157px'
+                data-type='scissors'
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='chat'>
+
+      </div>
+    </div>
     <script src='js/main.js'></script>
   </body>
 </html>
