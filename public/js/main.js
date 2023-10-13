@@ -1,5 +1,4 @@
-const pickArray = ['rock', 'papper', 'scissors'];
-const selections = document.querySelectorAll('.pick-box img');
+const selections = document.querySelectorAll('.pick img');
 const cpuChatWin = [];
 const cpuChatLoss = [];
 
@@ -17,13 +16,14 @@ const game = {
 };
 
 selections.forEach((selection) =>
-  selection.addEventListener('click', selectHand)
+  selection.addEventListener('click', gameStart)
 );
 
 // Function here
 
-function selectHand(e) {
-  game.cpuSelection = pickArray[Math.floor(Math.random() * pickArray.length)];
+function gameStart(e) {
+  game.cpuSelection =
+    selections[Math.floor(Math.random() * selections.length)].dataset.type;
   game.playerSelection = e.target.dataset.type;
   showPcChoice(game.cpuSelection);
   showPlayerChoice(game.playerSelection);
